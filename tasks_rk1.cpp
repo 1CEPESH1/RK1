@@ -4,7 +4,7 @@
 #include "tasks_rk1.h"
 
 char* SortByUniqueness(const char* s){
-    char* NewString = new char[20];
+    char* NewString = new char[strlen(s)];
     int count = 0;
     for (int i = 0; i < strlen(s); ++i) {
         int count1 = 0;
