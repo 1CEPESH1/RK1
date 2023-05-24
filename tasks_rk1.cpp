@@ -3,7 +3,7 @@
 #include <fstream>
 #include "tasks_rk1.h"
 
-char* NewChar(const char* s){
+char* SortByUniqueness(const char* s){
     char* NewString = new char[20];
     int count = 0;
     for (int i = 0; i < strlen(s); ++i) {
@@ -65,7 +65,7 @@ WorkWithFile::~WorkWithFile() {
 }
 
 void WorkWithFile::writeStatInfoToFile(const char *outFile) {
-    char* UniqueSimbols = NewChar(dataOfFile);
+    char* UniqueSimbols = SortByUniqueness(dataOfFile);
     int* CounterArray = new int[strlen(UniqueSimbols)];
     for (int i = 0; i < strlen(UniqueSimbols); ++i) {
         CounterArray[i] = 0;

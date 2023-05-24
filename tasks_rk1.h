@@ -10,7 +10,7 @@
 #ifndef BMSTU_2023_TASKS_RK1_H
 #define BMSTU_2023_TASKS_RK1_H
 
-char* NewChar(const char* s);
+char* SortByUniqueness(const char* s);
 
 class WorkWithFile {
 private :
